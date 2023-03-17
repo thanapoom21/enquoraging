@@ -11,10 +11,10 @@ npm install --save enquoraging
 ## Basic Usage
 
 ```js
-import Enquoraging from "enquoraging";
+import getQuote, { getRandomQuote } from "enquoraging";
 
-console.log(Enquoraging.getQuote());
-console.log(Enquoraging.getRandomQuote());
+console.log(getQuote());
+console.log(getRandomQuote());
 ```
 
 `getQuote()` method returns an object containing `quote` & `author` property.
