@@ -4,7 +4,11 @@
 
 **A simple NPM Package which returns motivational quote objects. You can call the function and display it in your website or app.**
 
+This repo is publish as an NPM package [here](<(https://www.npmjs.com/package/enquoraging)>).
+
 ## Getting Started
+
+You can download it from NPM registry as a package. By the following command:
 
 ```
 npm install --save enquoraging
@@ -12,12 +16,15 @@ npm install --save enquoraging
 
 ## Basic Usage
 
+ES module is implemented in this repo for future use. It offers several benefits over CommonJS, including tree shaking, static analysis, and support for asynchronous loading.
+
 Currently, there are 2 methods that you can use to get an object with properties or a string of a random quote. 
 
 ```js
 import getQuote, { getRandomQuote } from "enquoraging";
 
 console.log(getQuote());
+
 console.log(getRandomQuote());
 ```
 
