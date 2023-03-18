@@ -4,7 +4,7 @@
 
 **A simple NPM Package which returns motivational quote objects. You can call the function and display it in your website or app.**
 
-This repo is publish as an NPM package [here](<(https://www.npmjs.com/package/enquoraging)>).
+This repo is publish as an NPM package [here](https://www.npmjs.com/package/enquoraging).
 
 ## Getting Started
 
