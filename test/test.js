@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import getQuote, { getRandomQuote } from '../lib/index.js';
+import getQuote, { getQuoteArrayLength, getRandomQuote, getQuoteByIndex } from '../lib/index.js';
 
 describe('Running tests for methods', () => {
   describe('getQuote', () => {
@@ -42,6 +42,22 @@ describe('Running tests for methods', () => {
       const randomQuote = getRandomQuote();
       expect(randomQuote).to.have.length.greaterThan(5);
       done()
+    })
+  })
+
+  describe('getQuoteArrayLength', () => {
+    it('should return a number', (done) => {
+      const count = getQuoteArrayLength();
+      expect(count).to.be.a('number');
+      done();
+    })
+  })
+
+  describe('getQuoteByIndex', () => {
+    it('should return an object', (done) => {
+      const quoteObject = getQuoteByIndex(10);
+      expect(quoteObject).to.be.an('object')
+      done();
     })
   })
 })
