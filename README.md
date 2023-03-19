@@ -18,19 +18,29 @@ npm install --save enquoraging
 
 ES module is implemented in this repo for future use. It offers several benefits over CommonJS, including tree shaking, static analysis, and support for asynchronous loading.
 
-Currently, there are 2 methods that you can use to get an object with properties or a string of a random quote. 
+Currently, there are 2 methods that you can use to get an object with properties or a string of a random quote.
 
 ```js
-import getQuote, { getRandomQuote } from "enquoraging";
+import getQuote, {
+  getRandomQuote,
+  getQuoteArrayLength,
+  getQuoteByIndex,
+} from "enquoraging";
 
 console.log(getQuote());
+// returns an object containing `quote` and `author` properties.
 
 console.log(getRandomQuote());
+// returns only a random quote without an author.
+
+console.log(getQuoteArrayLength());
+// returns the total number of objects.
+
+console.log(getQuoteByIndex(10));
+// returns a quote by the given index.
 ```
 
-`getQuote()` returns an object containing `quote` and `author` properties.
-
-`getRandomQuote()` returns only a random quote without an author.
+The object returned from methods looks like this.
 
 ```json
 {
